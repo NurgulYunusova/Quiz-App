@@ -1,0 +1,34 @@
+.result-container {
+  display: none;
+
+  .result {
+    font-family: "Ubuntu", sans-serif;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    p {
+      margin-bottom: 1.3rem;
+      font-size: 1.6rem;
+    }
+
+    .restart {
+      display: block;
+      padding: 1rem 2rem;
+      font-family: "Ubuntu", sans-serif;
+      font-size: 1.5rem;
+      border-radius: 8px;
+      border: transparent;
+      cursor: pointer;
+      transition: all 0.2s ease-in-out;
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+        rgba(0, 0, 0, 0.22) 0px 10px 10px;
+
+      &:hover {
+        transform: scale(1.01);
+      }
+    }
+  }
+}

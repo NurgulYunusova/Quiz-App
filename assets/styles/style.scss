@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap");
+@import "startScreen";
+@import "quizContainer";
+@import "resultContainer";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("../images/gradient.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  body {
+    width: 100%;
+    height: 100vh;
+
+    .quiz-container {
+      width: 80%;
+
+      header h3 {
+        font-size: 1.4rem;
+      }
+
+      .quiz .question {
+        font-size: 1.3rem;
+      }
+
+      .answers .answer {
+        font-size: 1.1rem;
+      }
+
+      .next-button .next {
+        font-size: 1.2rem;
+        padding: 0.8rem 1.8rem;
+      }
+    }
+
+    .result p {
+      font-size: 1.9rem;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  body {
+    width: 100%;
+    height: 100vh;
+
+    .quiz-container {
+      width: 80%;
+
+      header h3 {
+        font-size: 1.2rem;
+      }
+
+      .quiz .question {
+        font-size: 1rem;
+        line-height: 1.5;
+      }
+
+      .answers .answer {
+        font-size: 0.9rem;
+      }
+
+      .next-button .next {
+        font-size: 0.9rem;
+        padding: 0.7rem 1.7rem;
+      }
+    }
+
+    .result p {
+      font-size: 1.5rem;
+    }
+  }
+}

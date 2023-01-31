@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap");
+.start-button {
+  display: block;
+  padding: 1rem 2rem;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.5rem;
+  border-radius: 8px;
+  border: transparent;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+.start-button:hover {
+  transform: scale(1.01);
+}
+
+.quiz-container {
+  display: none;
+  width: 40%;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  padding: 3rem 2rem;
+  font-family: "Ubuntu", sans-serif;
+}
+.quiz-container header h3 {
+  font-weight: lighter;
+  border-bottom: 3px solid #d7d3d3;
+  padding: 1rem 0;
+  text-align: center;
+}
+.quiz-container .quiz .question {
+  font-weight: 500;
+  padding: 1.5rem 0 1.2rem;
+}
+.quiz-container .answers .answer {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 1rem 0.8rem;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1rem;
+  background: transparent;
+  border: 1px solid #d7d3d3;
+  border-radius: 8px;
+  transition: all 0.2s ease-in-out;
+}
+.quiz-container .answers .answer.correct {
+  border-color: green;
+  background-color: rgba(26, 204, 29, 0.6);
+  cursor: pointer;
+}
+.quiz-container .answers .answer.incorrect {
+  border-color: red;
+  background-color: rgba(216, 37, 37, 0.6);
+  cursor: pointer;
+}
+.quiz-container .answers .answer:not(:last-child) {
+  margin-bottom: 15px;
+}
+.quiz-container .answers .answer:hover:not(.correct):not(.incorrect) {
+  cursor: pointer;
+  background-color: #f8f4f4;
+}
+.quiz-container .next-button {
+  display: flex;
+  justify-content: flex-end;
+}
+.quiz-container .next-button .next {
+  cursor: pointer;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  font-family: "Ubuntu", sans-serif;
+  border-radius: 8px;
+  border: transparent;
+  background-color: rgb(32, 120, 188);
+  color: #fff;
+  margin-top: 1.2rem;
+  transition: all 0.2s ease-in-out;
+}
+.quiz-container .next-button .next:hover {
+  background-color: rgb(25, 99, 156);
+}
+
+.result-container {
+  display: none;
+}
+.result-container .result {
+  font-family: "Ubuntu", sans-serif;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.result-container .result p {
+  margin-bottom: 1.3rem;
+  font-size: 1.6rem;
+}
+.result-container .result .restart {
+  display: block;
+  padding: 1rem 2rem;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.5rem;
+  border-radius: 8px;
+  border: transparent;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+.result-container .result .restart:hover {
+  transform: scale(1.01);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("../images/gradient.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  body {
+    width: 100%;
+    height: 100vh;
+  }
+  body .quiz-container {
+    width: 80%;
+  }
+  body .quiz-container header h3 {
+    font-size: 1.4rem;
+  }
+  body .quiz-container .quiz .question {
+    font-size: 1.3rem;
+  }
+  body .quiz-container .answers .answer {
+    font-size: 1.1rem;
+  }
+  body .quiz-container .next-button .next {
+    font-size: 1.2rem;
+    padding: 0.8rem 1.8rem;
+  }
+  body .result p {
+    font-size: 1.9rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  body {
+    width: 100%;
+    height: 100vh;
+  }
+  body .quiz-container {
+    width: 80%;
+  }
+  body .quiz-container header h3 {
+    font-size: 1.2rem;
+  }
+  body .quiz-container .quiz .question {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  body .quiz-container .answers .answer {
+    font-size: 0.9rem;
+  }
+  body .quiz-container .next-button .next {
+    font-size: 0.9rem;
+    padding: 0.7rem 1.7rem;
+  }
+  body .result p {
+    font-size: 1.5rem;
+  }
+} /*# sourceMappingURL=style.css.map */

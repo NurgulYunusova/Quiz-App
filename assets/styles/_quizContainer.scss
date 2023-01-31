@@ -1,0 +1,78 @@
+.quiz-container {
+  display: none;
+  width: 40%;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  padding: 3rem 2rem;
+  font-family: "Ubuntu", sans-serif;
+
+  header h3 {
+    font-weight: lighter;
+    border-bottom: 3px solid #d7d3d3;
+    padding: 1rem 0;
+    text-align: center;
+  }
+
+  .quiz .question {
+    font-weight: 500;
+    padding: 1.5rem 0 1.2rem;
+  }
+
+  .answers .answer {
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 1rem 0.8rem;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 1rem;
+    background: transparent;
+    border: 1px solid #d7d3d3;
+    border-radius: 8px;
+    transition: all 0.2s ease-in-out;
+
+    &.correct {
+      border-color: green;
+      background-color: rgba(26, 204, 29, 0.6);
+      cursor: pointer;
+    }
+
+    &.incorrect {
+      border-color: red;
+      background-color: rgba(216, 37, 37, 0.6);
+      cursor: pointer;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+
+    &:hover:not(.correct):not(.incorrect) {
+      cursor: pointer;
+      background-color: #f8f4f4;
+    }
+  }
+
+  .next-button {
+    display: flex;
+    justify-content: flex-end;
+
+    .next {
+      cursor: pointer;
+      padding: 1rem 2rem;
+      font-size: 1rem;
+      font-family: "Ubuntu", sans-serif;
+      border-radius: 8px;
+      border: transparent;
+      background-color: rgb(32, 120, 188);
+      color: #fff;
+      margin-top: 1.2rem;
+      transition: all 0.2s ease-in-out;
+
+      &:hover {
+        background-color: rgb(25, 99, 156);
+      }
+    }
+  }
+}

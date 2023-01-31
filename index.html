@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+  </head>
+  <body>
+    <div class="start-screen">
+      <button class="start-button">Start Quiz</button>
+    </div>
+    <div class="quiz-container">
+      <header>
+        <h3>
+          <span class="number-of-current-question">1</span> of
+          <span class="number-of-questions"></span> Question
+        </h3>
+      </header>
+      <div class="quiz">
+        <div class="question-heading">
+          <h3 class="question"></h3>
+        </div>
+        <div class="answers">
+          <button class="answer answer1" onclick="checkAnswer(this)"></button>
+          <button class="answer answer2" onclick="checkAnswer(this)"></button>
+          <button class="answer answer3" onclick="checkAnswer(this)"></button>
+          <button class="answer answer4" onclick="checkAnswer(this)"></button>
+        </div>
+      </div>
+      <div class="next-button">
+        <button class="next">Next</button>
+      </div>
+    </div>
+    <div class="result-container">
+      <div class="result">
+        <p>Your score is <span class="user-score"></span> out of 5</p>
+        <button class="restart">Restart</button>
+      </div>
+    </div>
+  </body>
+  <script src="./script.js"></script>
+</html>
